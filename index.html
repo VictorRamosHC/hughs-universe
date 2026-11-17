@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070e" />
+  <title>Hugo's Universe — Portfolio Solar System</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+  <main id="experience" aria-label="Hugo's Universe, portfólio interativo em sistema solar">
+    <canvas id="universe" aria-label="Sistema solar de projetos. Arraste para explorar e clique em um planeta para abrir seu dossiê."></canvas>
+    <header class="hud"><p class="eyebrow">CAPRI OS // PORTFOLIO NAVIGATION</p><h1>HUGO'S <span>UNIVERSE</span></h1><p id="system-status">SISTEMA ONLINE · 05 MUNDOS INDEXADOS</p></header>
+    <aside class="help"><kbd>DRAG</kbd> explorar <kbd>SCROLL</kbd> aproximar <kbd>ESC</kbd> visão geral</aside>
+    <div id="labels" aria-live="polite"></div>
+    <section id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="project-name">
+      <button class="close" type="button" aria-label="Fechar dossiê">×</button><p class="eyebrow">DOSSIÊ DO MUNDO</p><h2 id="project-name"></h2><p id="project-status" class="status"></p><p id="project-description"></p><ul id="project-stack" class="stack"></ul><a id="visit-world" class="visit" target="_blank" rel="noopener">VISITAR MUNDO <span>↗</span></a>
+    </section>
+    <section id="fallback" hidden aria-labelledby="fallback-title"><p class="eyebrow">CAPRI OS // MODO 2D</p><h2 id="fallback-title">HUGO'S UNIVERSE</h2><p>Seu navegador não disponibilizou WebGL. Os mundos continuam acessíveis:</p><nav id="fallback-worlds"></nav></section>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
