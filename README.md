@@ -1,6 +1,6 @@
 # Hugo's Universe
 
-Um hub de portfólio WebGL inspirado em um sistema solar: cada planeta é um projeto navegável. A cena usa Three.js via CDN, portanto não exige Node, bundler ou etapa de build.
+Um hub de portfólio WebGL inspirado em um sistema solar: cada planeta é um projeto navegável. A cena usa Three.js via CDN, portanto não exige Node, bundler ou etapa de build. O visual segue o protocolo do perfil: grafite `#111317`, porcelana `#F5F3EE` e vermelho soberano `#A81B1E`.
 
 ## Abrir localmente
 
@@ -37,7 +37,8 @@ As órbitas são normalizadas visualmente pelo `main.js` para manter uma cena le
 
 - Desktop: 52 mil partículas; telas compactas/touch: 30 mil.
 - Pixel ratio limitado e bloom reduzido no mobile.
-- Planetas usam geometria enxuta e materiais procedurais; o foco de câmera evita dependências extras.
+- Planetas usam geometria enxuta, mapas procedurais de grade/telemetria, casca wireframe e anéis de sinal; o foco de câmera evita dependências extras.
+- Hover revela um cartão de prévia; clique abre o pop-up de dossiê com transição de câmera.
 - Sem WebGL, a aplicação revela automaticamente uma lista 2D de links diretos.
 - Os dossiês são diálogos HTML, acessíveis por teclado; `Esc` retorna ao sistema.
 

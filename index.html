@@ -11,11 +11,13 @@
 <body>
   <main id="experience" aria-label="Hugo's Universe, portfólio interativo em sistema solar">
     <canvas id="universe" aria-label="Sistema solar de projetos. Arraste para explorar e clique em um planeta para abrir seu dossiê."></canvas>
-    <header class="hud"><p class="eyebrow">CAPRI OS // PORTFOLIO NAVIGATION</p><h1>HUGO'S <span>UNIVERSE</span></h1><p id="system-status">SISTEMA ONLINE · 05 MUNDOS INDEXADOS</p></header>
+    <div class="scanlines" aria-hidden="true"></div>
+    <header class="hud"><p class="eyebrow">ARASAKA-GRADE // PORTFOLIO NAVIGATION</p><h1>HUGH'S <span>UNIVERSE</span></h1><p id="system-status">SISTEMA ONLINE · 05 NÓS SOBERANOS</p></header>
     <aside class="help"><kbd>DRAG</kbd> explorar <kbd>SCROLL</kbd> aproximar <kbd>ESC</kbd> visão geral</aside>
     <div id="labels" aria-live="polite"></div>
+    <article id="preview-card" class="preview-card" aria-hidden="true"><p class="eyebrow">NODE PREVIEW</p><h2 id="preview-name"></h2><p id="preview-meta"></p><span class="preview-action">CLIQUE PARA ACESSAR DOSSIÊ <b>→</b></span></article>
     <section id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="project-name">
-      <button class="close" type="button" aria-label="Fechar dossiê">×</button><p class="eyebrow">DOSSIÊ DO MUNDO</p><h2 id="project-name"></h2><p id="project-status" class="status"></p><p id="project-description"></p><ul id="project-stack" class="stack"></ul><a id="visit-world" class="visit" target="_blank" rel="noopener">VISITAR MUNDO <span>↗</span></a>
+      <button class="close" type="button" aria-label="Fechar dossiê">×</button><p class="eyebrow">ARQUIVO // DOSSIÊ DO NÓ</p><h2 id="project-name"></h2><p id="project-status" class="status"></p><p id="project-description"></p><ul id="project-stack" class="stack"></ul><a id="visit-world" class="visit" target="_blank" rel="noopener">ABRIR REPOSITÓRIO <span>↗</span></a>
     </section>
     <section id="fallback" hidden aria-labelledby="fallback-title"><p class="eyebrow">CAPRI OS // MODO 2D</p><h2 id="fallback-title">HUGO'S UNIVERSE</h2><p>Seu navegador não disponibilizou WebGL. Os mundos continuam acessíveis:</p><nav id="fallback-worlds"></nav></section>
   </main>
